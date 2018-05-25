@@ -1,0 +1,5 @@
+FROM centos:7
+MAINTAINER xxxxxxxxxxxxx      <example@example.example>
+
+# Install packages necessary to run EAP
+RUN yum update -y && yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all
